@@ -1,0 +1,5 @@
+- win_whoami:
+  register: whoami_res
+
+- debug:
+    var: whoami_res
