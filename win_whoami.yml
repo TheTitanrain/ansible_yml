@@ -1,10 +1,2 @@
-- name: Search-only, return list of updates found (if any)
-  hosts: all
-  tasks:
-    - name: Search-only, return list of updates found (if any)
-      win_updates:
-        category_names:
-          - SecurityUpdates
-          - CriticalUpdates
-          - UpdateRollups
-        state: searched
+- name: whoami
+    win_command: whoami
