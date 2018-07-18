@@ -1,2 +1,5 @@
-- name: whoami
-    win_command: whoami
+- win_command: whomai
+  become: yes
+  become_method: runas
+  vars:
+    ansible_become_user: SYSTEM
