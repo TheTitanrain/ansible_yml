@@ -1,5 +1,5 @@
-- win_command: whomai
-  become: yes
-  become_method: runas
-  vars:
-    ansible_become_user: SYSTEM
+- win_whoami:
+  register: whoami_res
+
+- debug:
+    var: whoami_res
