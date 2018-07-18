@@ -8,3 +8,4 @@
           - CriticalUpdates
           - UpdateRollups
         state: searched
+        log_path: C:\Users\ansible.SMK\AppData\Local\Temp\ansible_wu.txt
