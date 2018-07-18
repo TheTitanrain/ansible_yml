@@ -2,4 +2,4 @@
   win_updates:
     state: installed
     log_path: c:\ansible_wu.txt
-  ignore_errors: yes  
+    
