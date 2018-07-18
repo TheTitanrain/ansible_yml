@@ -1,11 +1,10 @@
-- name: Search-only, return list of updates found (if any), log to c:\ansible_wu.txt
+- name: Search-only, return list of updates found (if any)
   hosts: all
   tasks:
-    - name: Search-only, return list of updates found (if any), log to c:\ansible_wu.txt
+    - name: Search-only, return list of updates found (if any)
       win_updates:
         category_names:
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
         state: searched
-        log_path: C:\Users\ansible.SMK\AppData\Local\Temp\ansible_wu.txt
