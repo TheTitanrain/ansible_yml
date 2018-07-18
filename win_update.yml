@@ -1,13 +1,5 @@
 - name: update0
   win_updates:
-    category_names:
-      - SecurityUpdates
-      - CriticalUpdates
-      - DefinitionUpdates
-      - UpdateRollups
-      - ServicePacks
     state: installed
     log_path: c:\ansible_wu.txt
-  ignore_errors: yes
-  register: update0
-  
+  ignore_errors: yes  
