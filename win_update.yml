@@ -8,4 +8,4 @@
           - CriticalUpdates
           - UpdateRollups
         state: searched
-        log_path: "C:\ansible.txt"
+        log_path: "C:\nsible.txt"
