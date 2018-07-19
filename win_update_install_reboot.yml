@@ -1,7 +1,11 @@
-- name: Install all critical and security updates and reboot
-  win_updates:
-    category_names:
-    - CriticalUpdates
-    - SecurityUpdates
-    - UpdateRollups
-    reboot: yes
+- name: Install updates and reboot
+  hosts: all
+  tasks:
+    - name: Install updates and reboot
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
+        log_path: "C:\nsible.txt"
+        reboot: yes
