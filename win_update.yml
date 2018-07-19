@@ -3,3 +3,5 @@
   tasks:
     - name: Install all security, critical, and rollup updates
       win_updates:
+      register: win_updates_result
+      failed_when: win_updates_result.failed is defined and win_updates_result.failed and win_updates_reboot == False
