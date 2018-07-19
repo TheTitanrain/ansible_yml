@@ -1,4 +1,4 @@
-- name: Install all critical and security updates
+- name: Install all critical and security updates and reboot
   win_updates:
     category_names:
     - CriticalUpdates
