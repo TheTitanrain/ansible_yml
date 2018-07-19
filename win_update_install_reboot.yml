@@ -7,5 +7,4 @@
           - SecurityUpdates
           - CriticalUpdates
           - UpdateRollups
-        log_path: "C:\ansible\ansible.txt"
         reboot: yes
