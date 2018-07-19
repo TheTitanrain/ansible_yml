@@ -1,6 +1,9 @@
-- name: Install all security, critical, and rollup updates
-  win_updates:
-    category_names:
-      - SecurityUpdates
-      - CriticalUpdates
-      - UpdateRollups
+- name: Install updates
+  hosts: all
+  tasks:
+    - name: Install all security, critical, and rollup updates
+      win_updates:
+        category_names:
+          - SecurityUpdates
+          - CriticalUpdates
+          - UpdateRollups
